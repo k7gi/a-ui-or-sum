@@ -3261,10 +3261,10 @@ getgenv().Library = {
     end 
 
     Library.InitConfigs = function(self, Window)
-        local Configs = Window:AddTab({
+        local Configs, Misc = Window:AddTab({
             Title = "Settings", 
             Icon = "rbxassetid://117366234081415",
-            Pages = {"Configs"},
+            Pages = {"Configs", "Misc"},
         })
 
         local Section = Configs:AddSection({
@@ -3389,7 +3389,7 @@ getgenv().Library = {
 
         ConfigHolder:UpdateConfigList();
         
-        return Configs
+        return Configs, Misc
     end 
 end 
 
