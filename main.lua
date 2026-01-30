@@ -3388,6 +3388,8 @@ getgenv().Library = {
         end})
 
         ConfigHolder:UpdateConfigList();
+        
+        return Tab
     end 
 end 
 
