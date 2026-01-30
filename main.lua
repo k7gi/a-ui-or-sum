@@ -10,12 +10,12 @@ local Mouse = Player:GetMouse()
 local ViewportSize = workspace.CurrentCamera.ViewportSize
 
 local CFG = {
-    MainColor = Color3.fromRGB(14, 14, 14),
-    SecondaryColor = Color3.fromRGB(26, 26, 26),
-    AccentColor = Color3.fromRGB(189, 172, 255),
-    TextColor = Color3.fromRGB(200, 200, 200),
-    TextDark = Color3.fromRGB(120, 120, 120),
-    StrokeColor = Color3.fromRGB(40, 40, 40),
+    MainColor = Color3.fromRGB(255, 192, 203),
+    SecondaryColor = Color3.fromRGB(255, 182, 193),
+    AccentColor = Color3.fromRGB(255, 105, 180),
+    TextColor = Color3.fromRGB(64, 64, 64),
+    TextDark = Color3.fromRGB(64, 64, 64),
+    StrokeColor = Color3.fromRGB(255, 182, 193),
     Font = Enum.Font.Code,
     BaseSize = Vector2.new(600, 450)
 }
@@ -208,7 +208,7 @@ local TopBar = Create("Frame", {
 
 local TitleLabel = Create("TextLabel", {
     Parent = TopBar,
-    Text = "kagi.sex",
+    Text = "kagi.sex | south bronx",
     TextColor3 = CFG.TextDark,
     TextSize = 13,
     Font = CFG.Font,
@@ -222,14 +222,20 @@ local TitleLabel = Create("TextLabel", {
 task.spawn(function()
     local textList = {
         '', 'k', 'ka', 'kag', 'kagi', 'kagi.', 'kagi.s', 'kagi.se', 'kagi.sex',
-        'kagi.se', 'kagi.s', 'kagi.', 'kagi', 'kag', 'ka', 'k'
+        'kagi.sex |', 'kagi.sex | s', 'kagi.sex | so', 'kagi.sex | sou', 'kagi.sex | sout',
+        'kagi.sex | south', 'kagi.sex | south ', 'kagi.sex | south b', 'kagi.sex | south br',
+        'kagi.sex | south bro', 'kagi.sex | south bron', 'kagi.sex | south bronx',
+        'kagi.sex | south bron', 'kagi.sex | south bro', 'kagi.sex | south br',
+        'kagi.sex | south b', 'kagi.sex | south ', 'kagi.sex | south', 'kagi.sex | sout',
+        'kagi.sex | sou', 'kagi.sex | so', 'kagi.sex | s', 'kagi.sex |',
+        'kagi.sex', 'kagi.se', 'kagi.s', 'kagi.', 'kagi', 'kag', 'ka', 'k'
     }
     while not Library.Unloaded do
         for _, text in ipairs(textList) do
             if Library.Unloaded then break end
             local display = text
             if string.find(text, "sex") then
-                display = string.gsub(text, "sex", '<font color="#bdacff">sex</font>')
+                display = string.gsub(text, "sex", '<font color="#FF69B4">sex</font>')
             end
             TitleLabel.Text = display
             task.wait(0.2)
