@@ -306,7 +306,7 @@ function lib:Create(ver, size, hidekey)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Kagi
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 900, 0, 825)
@@ -317,7 +317,7 @@ function lib:Create(ver, size, hidekey)
 	end
 	local PromptContainer = Instance.new('TextButton')
 	PromptContainer.Size = UDim2.new(1,0,1,0)
-	PromptContainer.BackgroundColor3 = Color3.fromRGB(13, 10, 28)
+	PromptContainer.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 	PromptContainer.BackgroundTransparency = 0.25
 	PromptContainer.AutoButtonColor = false
 	PromptContainer.BorderSizePixel = 0
@@ -342,7 +342,7 @@ function lib:Create(ver, size, hidekey)
 	PromptBackground.AnchorPoint = Vector2.new(0.5, 0.5)
 	PromptBackground.Position = UDim2.new(0.5,40,0.5,0)
 	PromptBackground.BorderSizePixel = 1
-	PromptBackground.BackgroundColor3 = Color3.fromRGB(23, 20, 46)
+	PromptBackground.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 	PromptBackground.Parent = PromptContainer
 	PromptBackground.ZIndex = 21
 
@@ -372,7 +372,7 @@ function lib:Create(ver, size, hidekey)
 	PromptTitle.Text = prompttitle or "Warning"
 	--PromptTitle.Text = "<font color='rgb(107, 89, 222)'><font size='20'>»</font></font>  " .. tostring(thetext)
 	PromptTitle.RichText = true
-	PromptTitle.TextColor3 = Color3.new(1,1,1)
+	PromptTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 	PromptTitle.TextSize = 15
 	PromptTitle.TextXAlignment = Enum.TextXAlignment.Left
 	PromptTitle.ZIndex = 22
@@ -386,7 +386,7 @@ function lib:Create(ver, size, hidekey)
 	PromptText.Position = UDim2.new(0, 15, 0, 40)
 	PromptText.Size = UDim2.new(1, -30, 1, -100)
 	PromptText.Font = Enum.Font.SourceSans
-	PromptText.TextColor3 = Color3.new(1,1,1)
+	PromptText.TextColor3 = Color3.fromRGB(64, 64, 64)
 	PromptText.TextWrapped = true
 	PromptText.TextSize = 15
 	PromptText.TextXAlignment = Enum.TextXAlignment.Left
@@ -415,7 +415,7 @@ function lib:Create(ver, size, hidekey)
 	PromptYesButton.Position = UDim2.new(.5,-105,1,-10)
 	PromptYesButton.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
 	PromptYesButton.Text = '       Yes'
-	PromptYesButton.TextColor3 = Color3.new(1,1,1)
+	PromptYesButton.TextColor3 = Color3.fromRGB(64, 64, 64)
 	PromptYesButton.Font = Enum.Font.SourceSansBold
 	PromptYesButton.TextSize = 14
 	PromptYesButton.Parent = PromptBackground
@@ -448,7 +448,7 @@ function lib:Create(ver, size, hidekey)
 	PromptNoButton.Position = UDim2.new(.5,105,1,-10)
 	PromptNoButton.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
 	PromptNoButton.Text = '       No'
-	PromptNoButton.TextColor3 = Color3.new(1,1,1)
+	PromptNoButton.TextColor3 = Color3.fromRGB(64, 64, 64)
 	PromptNoButton.Font = Enum.Font.SourceSansBold
 	PromptNoButton.TextSize = 14
 	PromptNoButton.Parent = PromptBackground
@@ -477,7 +477,7 @@ function lib:Create(ver, size, hidekey)
 	UserInputService.InputBegan:Connect(function(key)
 		if key.KeyCode == hidekey then
 			pcall(function()
-				for i, v in pairs(game.CoreGui.Vice:GetChildren()) do
+				for i, v in pairs(game.CoreGui.Kagi:GetChildren()) do
 					v.Visible = not v.Visible
 				end
 			end)
@@ -547,13 +547,13 @@ function lib:Create(ver, size, hidekey)
 	local LeftBarBack = Instance.new("Frame")
 	LeftBarBack.Name = "LeftBarBack"
 	LeftBarBack.Parent = MainFrame
-	LeftBarBack.BackgroundColor3 = Color3.fromRGB(13, 10, 28)
+	LeftBarBack.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 	LeftBarBack.Size = UDim2.new(0, 80, 1, 0)
 
 	local LeftBarBackCR = Instance.new("Frame")
 	LeftBarBackCR.Name = "LeftBarBackCR"
 	LeftBarBackCR.Parent = LeftBarBack
-	LeftBarBackCR.BackgroundColor3 = Color3.fromRGB(12, 10, 26)
+	LeftBarBackCR.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	LeftBarBackCR.BorderSizePixel = 0
 	LeftBarBackCR.Position = UDim2.new(1, -5, 0, 0)
 	LeftBarBackCR.Size = UDim2.new(0, 5, 1, 0)
@@ -663,7 +663,7 @@ function lib:Create(ver, size, hidekey)
 	Username.Size = UDim2.new(1, 0, 0, 14)
 	Username.Font = Enum.Font.GothamMedium
 	Username.Text = LocalPlayer.Name
-	Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Username.TextColor3 = Color3.fromRGB(64, 64, 64)
 	Username.TextSize = 12.000
 	Username.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -870,7 +870,7 @@ function lib:Create(ver, size, hidekey)
 		PageFade.Name = "PageFade"
 		PageFade.Parent = MainFrame
 		PageFade.AnchorPoint = Vector2.new(1, 1)
-		PageFade.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+		PageFade.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 		PageFade.BackgroundTransparency = 1
 		PageFade.BorderSizePixel = 0
 		PageFade.Position = UDim2.new(1, 0, 1, 0)
@@ -888,7 +888,7 @@ function lib:Create(ver, size, hidekey)
 		TabInnerTitle.Font = Enum.Font.GothamMedium
 		TabInnerTitle.Text = desc1
 		TabInnerTitle.RichText = true
-		TabInnerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TabInnerTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 		TabInnerTitle.TextSize = 20.000
 		TabInnerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -960,7 +960,7 @@ function lib:Create(ver, size, hidekey)
 					game.TweenService:Create(v, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Size = UDim2.new(0, 4, 0, 0)}):Play()
 				end
 			end
-			game.TweenService:Create(TabTitle, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+			game.TweenService:Create(TabTitle, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(64, 64, 64)}):Play()
 			game.TweenService:Create(TabImage, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
 			game.TweenService:Create(TabHighlight, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 4, 1, 0)}):Play()
 		end)
@@ -997,7 +997,7 @@ function lib:Create(ver, size, hidekey)
 			SubTabBtnInline.Name = "SubTabBtnInline"
 			SubTabBtnInline.Parent = SubTabBtnOutline
 			SubTabBtnInline.AnchorPoint = Vector2.new(0.5, 0.5)
-			SubTabBtnInline.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+			SubTabBtnInline.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 			SubTabBtnInline.Position = UDim2.new(0.5, 0, 0.5, 0)
 			SubTabBtnInline.Size = UDim2.new(1, -2, 1, -2)
 
@@ -1011,7 +1011,7 @@ function lib:Create(ver, size, hidekey)
 			SubTabBtnInteract.Size = UDim2.new(1, 0, 1, 0)
 			SubTabBtnInteract.Font = Enum.Font.Gotham
 			SubTabBtnInteract.Text = ""
-			SubTabBtnInteract.TextColor3 = Color3.fromRGB(255, 255, 255)
+			SubTabBtnInteract.TextColor3 = Color3.fromRGB(64, 64, 64)
 			SubTabBtnInteract.TextSize = 12.000
 			SubTabBtnInteract.TextXAlignment = Enum.TextXAlignment.Right
 
@@ -1053,7 +1053,7 @@ function lib:Create(ver, size, hidekey)
 			SubTabBtnTitle.Size = UDim2.new(1, -30, 1, 1)
 			SubTabBtnTitle.Font = Enum.Font.Gotham
 			SubTabBtnTitle.Text = title
-			SubTabBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+			SubTabBtnTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 			SubTabBtnTitle.TextSize = 12.000
 			SubTabBtnTitle.TextXAlignment = Enum.TextXAlignment.Right
 
@@ -1108,7 +1108,7 @@ function lib:Create(ver, size, hidekey)
 			SubPageFade.Name = "SubPageFade"
 			SubPageFade.Parent = MainFrame
 			SubPageFade.AnchorPoint = Vector2.new(1, 1)
-			SubPageFade.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+			SubPageFade.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 			SubPageFade.BackgroundTransparency = 1
 			SubPageFade.BorderSizePixel = 0
 			SubPageFade.Position = UDim2.new(1, 0, 1, 0)
@@ -1153,7 +1153,7 @@ function lib:Create(ver, size, hidekey)
 
 				for i, v in next, AllSubTabBtns:GetDescendants() do
 					if v.Name == 'SubTabBtnInline' then
-						TweenService:Create(v, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(23, 20, 41)}):Play()
+						TweenService:Create(v, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(255, 192, 203)}):Play()
 					end
 				end
 				TweenService:Create(SubTabBtnInline, TweenInfo.new(lib.Animations.AnimSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(107, 89, 222)}):Play()
@@ -1207,7 +1207,7 @@ function lib:Create(ver, size, hidekey)
 				LabelTitle.Size = UDim2.new(1, -40, 1, 0)
 				LabelTitle.Font = Enum.Font.GothamMedium
 				LabelTitle.Text = text
-				LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				LabelTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 				LabelTitle.TextSize = 12.000
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1399,7 +1399,7 @@ function lib:Create(ver, size, hidekey)
 				CounterLabelTitle.Size = UDim2.new(1, -40, 1, 0)
 				CounterLabelTitle.Font = Enum.Font.GothamMedium
 				CounterLabelTitle.Text = text
-				CounterLabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				CounterLabelTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 				CounterLabelTitle.TextSize = 12.000
 				CounterLabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1449,14 +1449,14 @@ function lib:Create(ver, size, hidekey)
 				local HueInput = nil
 				local Colorpicker = Instance.new("TextButton")
 				Colorpicker.Name = "Colorpicker"
-				Colorpicker.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+				Colorpicker.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 				Colorpicker.Position = UDim2.new(0.022580646, 0, 0.285382837, 0)
 				Colorpicker.Size = UDim2.new(0, 310, 0, 30)
 				Colorpicker.BackgroundTransparency = 1.000
 				Colorpicker.AutoButtonColor = false
 				Colorpicker.Font = Enum.Font.Gotham
 				Colorpicker.Text = ""
-				Colorpicker.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Colorpicker.TextColor3 = Color3.fromRGB(64, 64, 64)
 				Colorpicker.TextSize = 14.000
 				--Colorpicker.Selected = true
 
@@ -1470,7 +1470,7 @@ function lib:Create(ver, size, hidekey)
 				Title.Size = UDim2.new(1, -21, 1, 0)
 				Title.Font = Enum.Font.GothamMedium
 				Title.Text = text
-				Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Title.TextColor3 = Color3.fromRGB(64, 64, 64)
 				Title.TextSize = 12.000 --14
 				Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1741,7 +1741,7 @@ function lib:Create(ver, size, hidekey)
 				ButtonFrame.Size = UDim2.new(1, -33, 0, 22)
 				ButtonFrame.Font = Enum.Font.GothamMedium
 				ButtonFrame.Text = text
-				ButtonFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
+				ButtonFrame.TextColor3 = Color3.fromRGB(64, 64, 64)
 				ButtonFrame.TextSize = 12.000
 				ButtonFrame.TextXAlignment = Enum.TextXAlignment.Center
 				ButtonFrame.AutoButtonColor = false
@@ -1838,7 +1838,7 @@ function lib:Create(ver, size, hidekey)
 				BindTitle.Size = UDim2.new(1, -21, 1, 0)
 				BindTitle.Font = Enum.Font.GothamMedium
 				BindTitle.Text = text
-				BindTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				BindTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 				BindTitle.TextSize = 12.000
 				BindTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1876,7 +1876,7 @@ function lib:Create(ver, size, hidekey)
 				KeybindKeytext.Size = UDim2.new(0, 180, 1, 0)
 				KeybindKeytext.Font = Enum.Font.GothamMedium
 				KeybindKeytext.Text = text
-				KeybindKeytext.TextColor3 = Color3.fromRGB(255, 255, 255)
+				KeybindKeytext.TextColor3 = Color3.fromRGB(64, 64, 64)
 				KeybindKeytext.TextSize = 12.000
 				KeybindKeytext.TextXAlignment = Enum.TextXAlignment.Center
 
@@ -2006,7 +2006,7 @@ function lib:Create(ver, size, hidekey)
 				TextBoxTitle.Size = UDim2.new(1, -21, 1, 0)
 				TextBoxTitle.Font = Enum.Font.GothamMedium
 				TextBoxTitle.Text = text
-				TextBoxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextBoxTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 				TextBoxTitle.TextSize = 12.000
 				TextBoxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2031,7 +2031,7 @@ function lib:Create(ver, size, hidekey)
 				Textbox.Font = Enum.Font.GothamMedium
 				Textbox.PlaceholderText = placeholdertext
 				Textbox.Text = ""
-				Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Textbox.TextColor3 = Color3.fromRGB(64, 64, 64)
 				Textbox.TextSize = 12
 				Textbox.TextWrapped = true
 
@@ -2104,7 +2104,7 @@ function lib:Create(ver, size, hidekey)
 				SliderTitle.Size = UDim2.new(0, 180, 1, 0)
 				SliderTitle.Font = Enum.Font.GothamMedium
 				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				SliderTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 				SliderTitle.TextSize = 12.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2154,7 +2154,7 @@ function lib:Create(ver, size, hidekey)
 				SliderValue.Size = UDim2.new(0, 27, 0, 16)
 				SliderValue.Font = Enum.Font.Gotham
 				SliderValue.Text = min
-				SliderValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+				SliderValue.TextColor3 = Color3.fromRGB(64, 64, 64)
 				SliderValue.TextSize = 12
 				SliderValue.TextXAlignment = Enum.TextXAlignment.Center
 				SliderValue.TextWrapped = true
@@ -2302,7 +2302,7 @@ function lib:Create(ver, size, hidekey)
 				DropdownTitle.Size = UDim2.new(0, 180, 1, 0)
 				DropdownTitle.Font = Enum.Font.GothamMedium
 				DropdownTitle.Text = text
-				DropdownTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				DropdownTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 				DropdownTitle.TextSize = 12.000
 				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2369,7 +2369,7 @@ function lib:Create(ver, size, hidekey)
 				DropdownSelected.Visible = true
 				DropdownSelected.Font = Enum.Font.Gotham
 				DropdownSelected.Text = string.format(default)
-				DropdownSelected.TextColor3 = Color3.fromRGB(255, 255, 255)
+				DropdownSelected.TextColor3 = Color3.fromRGB(64, 64, 64)
 				DropdownSelected.TextSize = 12.000
 				DropdownSelected.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2551,7 +2551,7 @@ function lib:Create(ver, size, hidekey)
 					DropdownBtnTitle.Size = UDim2.new(1, -6, 1, 0)
 					DropdownBtnTitle.Font = Enum.Font.Gotham
 					DropdownBtnTitle.Text = tostring(opt)
-					DropdownBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+					DropdownBtnTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 					DropdownBtnTitle.TextSize = 12.000
 					DropdownBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 					DropdownBtnTitle.TextTransparency = 1
@@ -2633,7 +2633,7 @@ function lib:Notify(title, desc, dur)
 	local Notification = Instance.new("Frame")
 	Notification.Name = "Notification"
 	Notification.Parent = NotifsHolder
-	Notification.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+	Notification.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 	Notification.Size = UDim2.new(1, 0, 0, 60)
 	Notification.AnchorPoint = Vector2.new(0, 0.5)
 	Notification.Position = UDim2.new(1, 20, 0.5, 0)
@@ -2642,7 +2642,7 @@ function lib:Notify(title, desc, dur)
 	local NotificationBack = Instance.new("Frame")
 	NotificationBack.Name = "NotificationBack"
 	NotificationBack.Parent = Notification
-	NotificationBack.BackgroundColor3 = Color3.fromRGB(23, 20, 41)
+	NotificationBack.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
 	NotificationBack.Size = UDim2.new(1, 0, 1, 0)
 	NotificationBack.AnchorPoint = Vector2.new(0, 0.5)
 	NotificationBack.Position = UDim2.new(1, 20, 0.5, 0)
