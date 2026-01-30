@@ -140,7 +140,7 @@ local function CreateWatermark(title)
 	line1.Name = "line1"
 	line1.Parent = waterwarkFrame
 	line1.AnchorPoint = Vector2.new(0, 0.5)
-	line1.BackgroundColor3 = Color3.fromRGB(51, 45, 111)
+	line1.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	line1.BorderSizePixel = 0
 	line1.Position = UDim2.new(0.252, 0, 0.499, 0)
 	line1.Size = UDim2.new(0, 3, 0.7, 0)
@@ -168,7 +168,7 @@ local function CreateWatermark(title)
 	line2.Name = "line2"
 	line2.Parent = waterwarkFrame
 	line2.AnchorPoint = Vector2.new(0, 0.5)
-	line2.BackgroundColor3 = Color3.fromRGB(51, 45, 111)
+	line2.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	line2.BorderSizePixel = 0
 	line2.Position = UDim2.new(0.694, 0, 0.499, 0)
 	line2.Size = UDim2.new(0, 3, 0.7, 0)
@@ -197,7 +197,7 @@ local function CreateWatermark(title)
 	local ProfileOutline = Instance.new("UIStroke")
 	ProfileOutline.Enabled = true
 	ProfileOutline.Parent = PlayerImage
-	ProfileOutline.Color = Color3.fromRGB(47, 4, 100)
+	ProfileOutline.Color = Color3.fromRGB(255, 172, 183)
 	ProfileOutline.LineJoinMode = Enum.LineJoinMode.Round
 	ProfileOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 	ProfileOutline.Thickness = 1.6
@@ -354,7 +354,7 @@ function lib:Create(ver, size, hidekey)
 	local PromptStroke = Instance.new("UIStroke")
 	PromptStroke.Enabled = true
 	PromptStroke.Parent = PromptBackground
-	PromptStroke.Color = Color3.fromRGB(31, 26, 61)
+	PromptStroke.Color = Color3.fromRGB(255, 172, 183)
 	PromptStroke.LineJoinMode = Enum.LineJoinMode.Round
 	PromptStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 	PromptStroke.Thickness = 1
@@ -396,7 +396,7 @@ function lib:Create(ver, size, hidekey)
 	local PromptSepTop = Instance.new('Frame')
 	PromptSepTop.Size = UDim2.new(1,0,0,1)
 	PromptSepTop.Position = UDim2.new(0,0,0,30)
-	PromptSepTop.BackgroundColor3 = Color3.fromRGB(31, 26, 61)
+	PromptSepTop.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	PromptSepTop.BorderSizePixel = 0
 	PromptSepTop.Parent = PromptBackground
 	PromptSepTop.ZIndex = 22
@@ -404,7 +404,7 @@ function lib:Create(ver, size, hidekey)
 	local PromptSepBottom = Instance.new('Frame')
 	PromptSepBottom.Size = UDim2.new(1,0,0,1)
 	PromptSepBottom.Position = UDim2.new(0,0,1,-50)
-	PromptSepBottom.BackgroundColor3 = Color3.fromRGB(31, 26, 61)
+	PromptSepBottom.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	PromptSepBottom.BorderSizePixel = 0
 	PromptSepBottom.Parent = PromptBackground
 	PromptSepBottom.ZIndex = 22
@@ -561,7 +561,7 @@ function lib:Create(ver, size, hidekey)
 	local LeftBarBackLine = Instance.new("Frame")
 	LeftBarBackLine.Name = "LeftBarBackLine"
 	LeftBarBackLine.Parent = LeftBarBack
-	LeftBarBackLine.BackgroundColor3 = Color3.fromRGB(31, 26, 61)
+	LeftBarBackLine.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	LeftBarBackLine.BorderSizePixel = 0
 	LeftBarBackLine.Position = UDim2.new(1, -1, 0, 0)
 	LeftBarBackLine.Size = UDim2.new(0, 1, 1, 0)
@@ -629,7 +629,7 @@ function lib:Create(ver, size, hidekey)
 	local TopBarLine = Instance.new("Frame")
 	TopBarLine.Name = "TopBarLine"
 	TopBarLine.Parent = TopBar
-	TopBarLine.BackgroundColor3 = Color3.fromRGB(31, 26, 61)
+	TopBarLine.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	TopBarLine.BorderSizePixel = 0
 	TopBarLine.Position = UDim2.new(0, 0, 1, 0)
 	TopBarLine.Size = UDim2.new(1, 0, 0, 1)
@@ -1191,7 +1191,7 @@ function lib:Create(ver, size, hidekey)
 				local LabelOutline = Instance.new("UIStroke")
 				LabelOutline.Enabled = true
 				LabelOutline.Parent = Label
-				LabelOutline.Color = Color3.fromRGB(31, 26, 61)
+				LabelOutline.Color = Color3.fromRGB(255, 172, 183)
 				LabelOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				LabelOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				LabelOutline.Thickness = 1
@@ -1266,7 +1266,7 @@ function lib:Create(ver, size, hidekey)
 				local ToggleOutline = Instance.new("UIStroke")
 				ToggleOutline.Enabled = true
 				ToggleOutline.Parent = Toggle
-				ToggleOutline.Color = Color3.fromRGB(31, 26, 61)
+				ToggleOutline.Color = Color3.fromRGB(255, 172, 183)
 				ToggleOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				ToggleOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				ToggleOutline.Thickness = 1
@@ -1726,7 +1726,7 @@ function lib:Create(ver, size, hidekey)
 				local ButtonOutline = Instance.new("UIStroke")
 				ButtonOutline.Enabled = true
 				ButtonOutline.Parent = Button
-				ButtonOutline.Color = Color3.fromRGB(31, 26, 61)
+				ButtonOutline.Color = Color3.fromRGB(255, 172, 183)
 				ButtonOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				ButtonOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				ButtonOutline.Thickness = 1
@@ -1822,7 +1822,7 @@ function lib:Create(ver, size, hidekey)
 				local BindOutline = Instance.new("UIStroke")
 				BindOutline.Enabled = true
 				BindOutline.Parent = BindContainer
-				BindOutline.Color = Color3.fromRGB(31, 26, 61)
+				BindOutline.Color = Color3.fromRGB(255, 172, 183)
 				BindOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				BindOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				BindOutline.Thickness = 1
@@ -1990,7 +1990,7 @@ function lib:Create(ver, size, hidekey)
 				local TextBoxOutline = Instance.new("UIStroke")
 				TextBoxOutline.Enabled = true
 				TextBoxOutline.Parent = TextBoxContainer
-				TextBoxOutline.Color = Color3.fromRGB(31, 26, 61)
+				TextBoxOutline.Color = Color3.fromRGB(255, 172, 183)
 				TextBoxOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				TextBoxOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				TextBoxOutline.Thickness = 1
@@ -2087,7 +2087,7 @@ function lib:Create(ver, size, hidekey)
 				local SliderOutline = Instance.new("UIStroke")
 				SliderOutline.Enabled = true
 				SliderOutline.Parent = Slider
-				SliderOutline.Color = Color3.fromRGB(31, 26, 61)
+				SliderOutline.Color = Color3.fromRGB(255, 172, 183)
 				SliderOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				SliderOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				SliderOutline.Thickness = 1
@@ -2285,7 +2285,7 @@ function lib:Create(ver, size, hidekey)
 				local DropdownOutline = Instance.new("UIStroke")
 				DropdownOutline.Enabled = true
 				DropdownOutline.Parent = Dropdown
-				DropdownOutline.Color = Color3.fromRGB(31, 26, 61)
+				DropdownOutline.Color = Color3.fromRGB(255, 172, 183)
 				DropdownOutline.LineJoinMode = Enum.LineJoinMode.Miter
 				DropdownOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 				DropdownOutline.Thickness = 1
@@ -2669,7 +2669,7 @@ function lib:Notify(title, desc, dur)
 	local NotificationLine = Instance.new("Frame")
 	NotificationLine.Name = "NotificationLine"
 	NotificationLine.Parent = NotificationBack
-	NotificationLine.BackgroundColor3 = Color3.fromRGB(31, 26, 61)
+	NotificationLine.BackgroundColor3 = Color3.fromRGB(255, 172, 183)
 	NotificationLine.BorderSizePixel = 0
 	NotificationLine.Position = UDim2.new(0, 0, 0, 20)
 	NotificationLine.Size = UDim2.new(1, 0, 0, 1)
