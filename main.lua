@@ -111,7 +111,7 @@ getgenv().Library = {
 
     local Themes = {
         Preset = {
-            ["Accent"] = Color3.fromRGB(102, 91, 248),
+            ["Accent"] = Color3.fromRGB(255, 182, 193),
             ["ElementBackground"] = Color3.fromRGB(20, 20, 22),
             ["SectionBackground"] = Color3.fromRGB(15, 16, 18),
             ["ElementOutline"] = Color3.fromRGB(25, 25, 29),
@@ -3383,7 +3383,7 @@ getgenv().Library = {
             Title = "Other"
         })
 
-        Section:AddKeyPicker({Text = "Menu bind", Mode = "Toggle", ShowInList = false, Callback = function(Value)
+        Section:AddKeyPicker({Text = "Menu bind", Mode = "Toggle", ShowInList = false, Default = Enum.KeyCode.LeftAlt, Callback = function(Value)
             Window.SetVisible(Value)
         end})
 
