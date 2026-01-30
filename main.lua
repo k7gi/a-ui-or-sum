@@ -297,7 +297,9 @@ function Library:Tab(name, icon)
     local PageFrame = Create("ScrollingFrame", {
         Parent = PagesContainer,
         Size = UDim2.new(1, 0, 1, 0),
-        BackgroundTransparency = 1,
+        BackgroundColor3 = Color3.fromRGB(255, 192, 203),
+        BackgroundTransparency = 0,
+        BorderSizePixel = 0,
         Visible = false,
         ScrollBarThickness = 2,
         ScrollBarImageColor3 = CFG.AccentColor,
