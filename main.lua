@@ -13,8 +13,8 @@ local CFG = {
     MainColor = Color3.fromRGB(255, 192, 203),
     SecondaryColor = Color3.fromRGB(255, 182, 193),
     AccentColor = Color3.fromRGB(255, 105, 180),
-    TextColor = Color3.fromRGB(64, 64, 64),
-    TextDark = Color3.fromRGB(64, 64, 64),
+    TextColor = Color3.fromRGB(40, 40, 40),
+    TextDark = Color3.fromRGB(40, 40, 40),
     StrokeColor = Color3.fromRGB(255, 182, 193),
     Font = Enum.Font.Code,
     BaseSize = Vector2.new(600, 450)
@@ -253,7 +253,7 @@ local ContentContainer = Create("Frame", {
 local Sidebar = Create("Frame", {
     Parent = ContentContainer,
     Size = UDim2.new(0, 60, 1, 0),
-    BackgroundColor3 = Color3.fromRGB(17, 17, 17),
+    BackgroundColor3 = Color3.fromRGB(255, 182, 193),
     BorderSizePixel = 0,
   Position = UDim2.new(0, 0, 0, 0)
 }, {
@@ -350,7 +350,7 @@ function Library:Tab(name, icon)
             Parent = ParentCol,
             Size = UDim2.new(1, 0, 0, 0),
             AutomaticSize = Enum.AutomaticSize.Y,
-            BackgroundColor3 = Color3.fromRGB(17, 17, 17),
+            BackgroundColor3 = Color3.fromRGB(255, 182, 193),
             BorderSizePixel = 0
         }, {
             Create("UIStroke", {Color = CFG.StrokeColor}),
