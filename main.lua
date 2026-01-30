@@ -333,7 +333,7 @@ function lib:Create(ver, size, hidekey)
 	MainGlow.Size = UDim2.new(1, 30, 1, 30)
 	MainGlow.ZIndex = 0
 	MainGlow.Image = "rbxassetid://5028857084"
-	MainGlow.ImageColor3 = Color3.fromRGB(107, 89, 222)
+	MainGlow.ImageColor3 = Color3.fromRGB(255, 182, 193)
 	MainGlow.ScaleType = Enum.ScaleType.Slice
 	MainGlow.SliceCenter = Rect.new(24, 24, 276, 276)
 
@@ -413,7 +413,7 @@ function lib:Create(ver, size, hidekey)
 	PromptYesButton.Size = UDim2.new(0,100,0,30)
 	PromptYesButton.AnchorPoint = Vector2.new(0,1)
 	PromptYesButton.Position = UDim2.new(.5,-105,1,-10)
-	PromptYesButton.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
+	PromptYesButton.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 	PromptYesButton.Text = '       Yes'
 	PromptYesButton.TextColor3 = Color3.fromRGB(64, 64, 64)
 	PromptYesButton.Font = Enum.Font.SourceSansBold
@@ -446,7 +446,7 @@ function lib:Create(ver, size, hidekey)
 	PromptNoButton.Size = UDim2.new(0,100,0,30)
 	PromptNoButton.AnchorPoint = Vector2.new(1,1)
 	PromptNoButton.Position = UDim2.new(.5,105,1,-10)
-	PromptNoButton.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
+	PromptNoButton.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 	PromptNoButton.Text = '       No'
 	PromptNoButton.TextColor3 = Color3.fromRGB(64, 64, 64)
 	PromptNoButton.Font = Enum.Font.SourceSansBold
@@ -498,7 +498,7 @@ function lib:Create(ver, size, hidekey)
 	end)
 
 	PromptYesButton.MouseLeave:Connect(function()
-		game.TweenService:Create(PromptYesButton, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(107, 89, 222)}):Play()
+		game.TweenService:Create(PromptYesButton, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 182, 193)}):Play()
 	end)
 
 	PromptYesButton.MouseButton1Down:Connect(function()
@@ -514,7 +514,7 @@ function lib:Create(ver, size, hidekey)
 	end)
 
 	PromptNoButton.MouseLeave:Connect(function()
-		game.TweenService:Create(PromptNoButton, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(107, 89, 222)}):Play()
+		game.TweenService:Create(PromptNoButton, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 182, 193)}):Play()
 	end)
 
 	PromptNoButton.MouseButton1Down:Connect(function()
@@ -985,7 +985,7 @@ function lib:Create(ver, size, hidekey)
 			local SubTabBtnOutline = Instance.new("Frame")
 			SubTabBtnOutline.Name = "SubTabBtnOutline"
 			SubTabBtnOutline.Parent = AllSubTabBtns
-			SubTabBtnOutline.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
+			SubTabBtnOutline.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 			SubTabBtnOutline.Size = UDim2.new(0, 110, 1, -4)
 
 			local SubTabBtnOutlineCorner = Instance.new("UICorner")
@@ -1020,7 +1020,7 @@ function lib:Create(ver, size, hidekey)
 			end)
 
 			SubTabBtnInteract.MouseLeave:Connect(function()
-				TweenService:Create(SubTabBtnOutline, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(107, 89, 222)}):Play()
+				TweenService:Create(SubTabBtnOutline, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 182, 193)}):Play()
 			end)
 
 			SubTabBtnInteract.MouseButton1Down:Connect(function()
@@ -1221,7 +1221,7 @@ function lib:Create(ver, size, hidekey)
 				LabelArrows.Size = UDim2.new(0, 10, 0, 20)
 				LabelArrows.Font = Enum.Font.Ubuntu
 				LabelArrows.Text = "»"
-				LabelArrows.TextColor3 = Color3.fromRGB(107, 89, 222)
+				LabelArrows.TextColor3 = Color3.fromRGB(64, 64, 64)
 				LabelArrows.TextSize = 20
 				LabelArrows.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1341,7 +1341,7 @@ function lib:Create(ver, size, hidekey)
 					if toggled == false then
 						toggled = true
 						TweenService:Create(ToggleFrameCircle, TweenInfo.new(lib.Animations.ElementsAS, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0, 20, 0.5, 0)}):Play()
-						TweenService:Create(ToggleFrameBack, TweenInfo.new(lib.Animations.ElementsAS, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(107, 89, 222)}):Play()
+						TweenService:Create(ToggleFrameBack, TweenInfo.new(lib.Animations.ElementsAS, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 182, 193)}):Play()
 					else
 						toggled = false
 						TweenService:Create(ToggleFrameCircle, TweenInfo.new(lib.Animations.ElementsAS, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0, 3, 0.5, 0)}):Play()
@@ -1414,7 +1414,7 @@ function lib:Create(ver, size, hidekey)
 					CounterLabelArrows.Size = UDim2.new(0, 10, 0, 20)
 					CounterLabelArrows.Font = Enum.Font.Ubuntu
 					CounterLabelArrows.Text = "»"
-					CounterLabelArrows.TextColor3 = Color3.fromRGB(107, 89, 222)
+					CounterLabelArrows.TextColor3 = Color3.fromRGB(64, 64, 64)
 					CounterLabelArrows.TextSize = 20
 					CounterLabelArrows.TextXAlignment = Enum.TextXAlignment.Left
 				end
@@ -1752,7 +1752,7 @@ function lib:Create(ver, size, hidekey)
 				ButtonFrameCorner.Parent = ButtonFrame
 
 				local ButtonUIStroke = Instance.new("UIStroke")
-				ButtonUIStroke.Color = Color3.fromRGB(107, 89, 222)
+				ButtonUIStroke.Color = Color3.fromRGB(255, 182, 193)
 				ButtonUIStroke.Thickness = 0.800000011920929
 				ButtonUIStroke.Parent = ButtonFrame
 				ButtonUIStroke.LineJoinMode = Enum.LineJoinMode.Round
@@ -1797,7 +1797,7 @@ function lib:Create(ver, size, hidekey)
 
 				ButtonFrame.MouseLeave:Connect(function()
 					TweenService:Create(ButtonFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(34, 28, 64)}):Play()
-					TweenService:Create(ButtonUIStroke, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Color = Color3.fromRGB(107, 89, 222)}):Play()
+					TweenService:Create(ButtonUIStroke, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Color = Color3.fromRGB(255, 182, 193)}):Play()
 				end)
 
 				ButtonFrame.MouseButton1Down:Connect(function()
@@ -2135,7 +2135,7 @@ function lib:Create(ver, size, hidekey)
 				SlideBackLight.Name = "SlideBackLight"
 				SlideBackLight.Parent = SlideBack
 				SlideBackLight.AnchorPoint = Vector2.new(0, 0.5)
-				SlideBackLight.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
+				SlideBackLight.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 				SlideBackLight.BorderSizePixel = 0
 				SlideBackLight.Position = UDim2.new(0, 0, 0.5, 0)
 				SlideBackLight.Size = UDim2.new(0, 0, 0, 2)
@@ -2338,7 +2338,7 @@ function lib:Create(ver, size, hidekey)
 				DropdownDropFrameArrowHolder.Name = "DropdownDropFrameArrowHolder"
 				DropdownDropFrameArrowHolder.Parent = DropdownDropFrame
 				DropdownDropFrameArrowHolder.AnchorPoint = Vector2.new(1, 0.5)
-				DropdownDropFrameArrowHolder.BackgroundColor3 = Color3.fromRGB(107, 89, 222)
+				DropdownDropFrameArrowHolder.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 				DropdownDropFrameArrowHolder.Position = UDim2.new(1, -2, 0.5, 0)
 				DropdownDropFrameArrowHolder.Size = UDim2.new(0, 14, 0, 16)
 				
@@ -2694,7 +2694,7 @@ function lib:Notify(title, desc, dur)
 	NotificationTitle.Size = UDim2.new(1, -10, 0, 20)
 	NotificationTitle.Font = Enum.Font.GothamMedium
 	NotificationTitle.Text = title
-	NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NotificationTitle.TextColor3 = Color3.fromRGB(64, 64, 64)
 	NotificationTitle.TextSize = 12.000
 	NotificationTitle.TextXAlignment = Enum.TextXAlignment.Left
 	NotificationTitle.TextTransparency = 1
@@ -2721,7 +2721,7 @@ function lib:Notify(title, desc, dur)
 	NotificationDesc.Size = UDim2.new(1, -10, 1, -16)
 	NotificationDesc.Font = Enum.Font.Gotham
 	NotificationDesc.Text = desc
-	NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NotificationDesc.TextColor3 = Color3.fromRGB(64, 64, 64)
 	NotificationDesc.TextSize = 12.000
 	NotificationDesc.TextWrapped = true
 	NotificationDesc.TextXAlignment = Enum.TextXAlignment.Left
