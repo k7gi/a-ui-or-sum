@@ -933,11 +933,12 @@ function Library:Tab(name, icon)
     return GroupFunctions
 end
 
-local Legit = Library:Tab("Legit", 98159911363596)
-local Rage = Library:Tab("Rage", 10455604811)
-local Visuals = Library:Tab("Visuals", 10455603612)
-local Misc = Library:Tab("Misc", 11888734334)
-local Cfg = Library:Tab("Cfg", 12403097620)
+-- Example tab icons:
+-- Legit: 98159911363596
+-- Rage: 10455604811
+-- Visuals: 10455603612
+-- Misc: 11888734334
+-- Cfg: 12403097620
 
 Library.MenuKey = Enum.KeyCode.Insert
 local Visible = true
