@@ -3261,13 +3261,13 @@ getgenv().Library = {
     end 
 
     Library.InitConfigs = function(self, Window)
-        local Tab = Window:AddTab({
+        local Configs = Window:AddTab({
             Title = "Settings", 
             Icon = "rbxassetid://117366234081415",
             Pages = {"Configs"},
         })
 
-        local Section = Tab:AddSection({
+        local Section = Configs:AddSection({
             Side = "Left", 
             Title = "Configs"
         })
@@ -3326,7 +3326,7 @@ getgenv().Library = {
             Label.ChangeText("Current Config: "..readfile(Library.Directory.."/Autoload.txt"))
         end})
 
-        local Section = Tab:AddSection({
+        local Section = Configs:AddSection({
             Side = "Right", 
             Title = "Theming"
         })  
@@ -3378,7 +3378,7 @@ getgenv().Library = {
 
         ThemeHolder:UpdateThemingList()
 
-        local Section = Tab:AddSection({
+        local Section = Configs:AddSection({
             Side = "Right", 
             Title = "Other"
         })
@@ -3389,7 +3389,7 @@ getgenv().Library = {
 
         ConfigHolder:UpdateConfigList();
         
-        return Tab
+        return Configs
     end 
 end 
 
