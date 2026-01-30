@@ -1004,6 +1004,4 @@ MobileToggle.MouseButton1Click:Connect(function()
     MainFrame.Visible = Visible
 end)
 
-Library:Notify("Success notify", "success")
-Library:Notify("Warning notify", "warning")
-Library:Notify("Notify")
+return Library
