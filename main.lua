@@ -208,7 +208,7 @@ local TopBar = Create("Frame", {
 
 local TitleLabel = Create("TextLabel", {
     Parent = TopBar,
-    Text = "eclipse.wtf | fallen",
+    Text = "kagi.sex",
     TextColor3 = CFG.TextDark,
     TextSize = 13,
     Font = CFG.Font,
@@ -221,23 +221,15 @@ local TitleLabel = Create("TextLabel", {
 
 task.spawn(function()
     local textList = {
-        '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'eclipse', 'eclipse.', 'eclipse.w',
-        'eclipse.wt', 'eclipse.wtf', 'eclipse.wtf |', 'eclipse.wtf | u',
-        'eclipse.wtf | un', 'eclipse.wtf | uni', 'eclipse.wtf | univ', 'eclipse.wtf | univers',
-        'eclipse.wtf | universa', 'eclipse.wtf | universal', 'eclipse.wtf | universa',
-        'eclipse.wtf | univers', 'eclipse.wtf | univer', 'eclipse.wtf | unive',
-        'eclipse.wtf | univ', 'eclipse.wtf | uni', 'eclipse.wtf | un', 'eclipse.wtf | u',
-        'eclipse.wtf |', 'eclipse.wtf', 'eclipse.wt', 'eclipse.w', 'eclipse.', 
-        'eclipse', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
+        '', 'k', 'ka', 'kag', 'kagi', 'kagi.', 'kagi.s', 'kagi.se', 'kagi.sex',
+        'kagi.se', 'kagi.s', 'kagi.', 'kagi', 'kag', 'ka', 'k'
     }
     while not Library.Unloaded do
         for _, text in ipairs(textList) do
             if Library.Unloaded then break end
             local display = text
-            if string.find(text, "fallen") then
-                display = string.gsub(text, "fallen", '<font color="#bdacff">fallen</font>')
-            elseif string.find(text, "wtf") then
-                display = string.gsub(text, "wtf", '<font color="#bdacff">wtf</font>')
+            if string.find(text, "sex") then
+                display = string.gsub(text, "sex", '<font color="#bdacff">sex</font>')
             end
             TitleLabel.Text = display
             task.wait(0.2)
@@ -940,7 +932,7 @@ end
 -- Misc: 11888734334
 -- Cfg: 12403097620
 
-Library.MenuKey = Enum.KeyCode.Insert
+Library.MenuKey = Enum.KeyCode.LeftAlt
 local Visible = true
 
 UserInputService.InputBegan:Connect(function(input, gpe)
