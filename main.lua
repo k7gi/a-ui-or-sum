@@ -17,14 +17,8 @@ local RuntimeFields = {
     ["LRM_ScriptName"] = true,
     ["LRM_IsUserPremium"] = true,
 }
-local BaseEnvironment = getfenv(Payload)
-local PayloadEnvironment = setmetatable({}, {
-    __index = function(_, Name)
-        if RuntimeFields[Name] then
-            return Luarmor[Name]
-        end
-        return BaseEnvironment[Name]
-    end,
-})
-setfenv(Payload, PayloadEnvironment)
+local Environment = getfenv(Payload)
+for Name in pairs(RuntimeFields) do
+    rawset(Environment, Name, Luarmor[Name])
+end
 return Payload(Luarmor)
